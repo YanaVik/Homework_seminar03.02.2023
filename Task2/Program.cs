@@ -7,31 +7,31 @@ Console.Write("Введите количество столбцов: ");
 int col = Convert.ToInt32(Console.ReadLine());
 int[,] array = new int[row, col];
 
-void FillarrayayRandomNumbers(int[,] arrayay)
+void FillarrayRandomNumbers(int[,] array)
 {
-    for (int i = 0; i < arrayay.GetLength(0); i++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        for (int j = 0; j < arrayay.GetLength(1); j++)
+        for (int j = 0; j < array.GetLength(1); j++)
         {
-            arrayay[i, j] = Convert.ToInt32(new Random().Next(-100, 100));
+            array[i, j] = Convert.ToInt32(new Random().Next(-100, 100));
         }
     }
 }
 
-void Printarrayay(int[,] arrayay)
+void Printarray(int[,] array)
 {
-    for (int i = 0; i < arrayay.GetLength(0); i++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        for (int j = 0; j < arrayay.GetLength(1); j++)
+        for (int j = 0; j < array.GetLength(1); j++)
         {
-            Console.Write(String.Format("{0,8}",arrayay[i, j]));
+            Console.Write(String.Format("{0,8}",array[i, j]));
         }
         Console.WriteLine();
     }
 }
 
-FillarrayayRandomNumbers(array);
-Printarrayay(array);
+FillarrayRandomNumbers(array);
+Printarray(array);
 
 Console.Write("Введите строку: ");
 int pos1 = Convert.ToInt32(Console.ReadLine()) - 1;
