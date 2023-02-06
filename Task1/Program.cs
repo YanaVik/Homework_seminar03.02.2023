@@ -4,7 +4,7 @@ Console.Write("Введите количество строк: ");
 int row = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите количество столбцов: ");
 int col = Convert.ToInt32(Console.ReadLine());
-double[,] numbers = new double[row, col];
+double[,] array = new double[row, col];
 
 
 void FillArrayRandomNumbers(double[,] array)
@@ -30,5 +30,5 @@ void PrintArray(double[,] array)
     }
 }
 
-FillArrayRandomNumbers(numbers);
-PrintArray(numbers);
+FillArrayRandomNumbers(array);
+PrintArray(array);
