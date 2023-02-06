@@ -24,7 +24,7 @@ void PrintArray(double[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            Console.Write(String.Format("{0,7}",array[i, j]));
+            Console.Write(String.Format("{0,8}",array[i, j]));
         }
         Console.WriteLine();
     }
